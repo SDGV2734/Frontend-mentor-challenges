@@ -1,0 +1,67 @@
+body{
+    background-color: hsl(217, 54%, 11%)
+  
+}
+
+.container{
+   background-color: hsl(216, 50%, 16%)
+   
+}
+
+.padding{
+    padding-left: 7%;
+}
+
+.eq{
+    font-size: 40px;
+    color: white;
+    padding-top: 2%;
+}
+.pic{
+    text-align: center;
+    object-fit: none;
+    height: 10%;
+    width: 10%;
+    margin-left: 30%;
+}
+.par{
+    font-size: 30px;
+    color: aliceblue;
+    padding-top: 3%;
+}
+.days{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.avatar{
+    display: flex;
+    align-items:center;
+    font-size: 30px;
+    padding-top: 4%;
+}
+#name{
+    color: rgb(179, 176, 176);
+    margin-left: 10%;
+}
+#name1{
+    color: rgb(249, 244, 244);
+}
+#et{
+    font-size: 30px;
+    color: hsl(178, 100%, 50%);
+    padding: 5px;
+}
+#left{
+    color: beige;
+    padding: 5px;
+    font-size: 30px;
+    margin-left: 50%;
+}
+
+
+
+
+
+ 

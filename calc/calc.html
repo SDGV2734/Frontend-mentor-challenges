@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>Val 1:</p>
+    <input type="number" id="val1">
+
+    <p>Val 2:</p>
+    <input type="number" id="val2">
+    <br>
+    <br>
+    <button id="add"> Add</button>
+    <button id="subtract">Subtract</button>
+    <button id="multiply">Multiply</button>
+    <button id="divide">Divide</button>
+
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+        const val1Input = document.getElementById("val1");
+        const val2Input = document.getElementById("val2");
+        const resultSpan = document.getElementById("result");
+
+        const add = document.getElementById("add");
+        const subtract = document.getElementById("subtract");
+        const multiply = document.getElementById("multiply");
+        const divide = document.getElementById("divide");
+
+        function calculate(operation) {
+            const num1 = parseFloat(val1Input.value);
+            const num2 = parseFloat(val2Input.value);
+
+            let result;
+            switch (operation) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "subtract":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    if (num2 === 0) {
+                        result = "Error: Cannot divide by zero";
+                    } else {
+                        result = num1 / num2;
+                    }
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+
+            resultSpan.textContent = result;
+        }
+
+        add.addEventListener("click", () => calculate("add"));
+        subtract.addEventListener("click", () => calculate("subtract"));
+        multiply.addEventListener("click", () => calculate("multiply"));
+        divide.addEventListener("click", () => calculate("divide"));
+    </script>
+</body>
+</html>

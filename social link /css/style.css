@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    /* Primary */
+  
+    --Green: hsl(75, 94%, 57%);
+  
+    /* Neutral */
+  
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Off-Black);
+    color: var(--White);
+    padding: 1.8rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    background-color: var(--Dark-Grey);
+    padding: 1.4rem;
+    margin: auto;
+    width: 18rem;
+    height: 27rem;
+    border-radius: 0.3rem;
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  
+  .intro img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+  }
+  
+  .name {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .location {
+    color: var(--Green);
+    font-size: 0.6rem;
+    margin-bottom: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .occupation {
+    font-size: 0.65rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+  }
+  
+  .link_button{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .link {
+    background-color: var(--Grey);
+    color: var(--White);
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .link:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .container {
+      width: 300px;
+    }
+    .occupation {
+      font-size: 0.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
